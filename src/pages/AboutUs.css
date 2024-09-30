@@ -1,0 +1,38 @@
+.marquee {
+    position: relative;
+    height: 256px; /* Adjust based on your needs */
+    overflow: hidden;
+  }
+  
+  .animate-marquee-down {
+    animation: marquee-down 10s linear infinite;
+  }
+  
+  .animate-marquee-up {
+    animation: marquee-up 10s linear infinite;
+  }
+  
+  @keyframes marquee-down {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes marquee-up {
+    0% {
+      transform: translateY(50%);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(50%);
+    }
+  }
+  
